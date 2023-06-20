@@ -1,0 +1,80 @@
+
+
+.intro {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    opacity: 100;
+    animation-name: introAnimation;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+}
+
+.titulos {
+    font-family: 'Star Wars', sans-serif;
+    color: yellow;
+    font-size: 20px;
+    margin: 0;
+}
+
+@keyframes introAnimation {
+    0% {
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(2);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1);
+    }
+}
+
+.contenido {
+    display: flex;
+    color: white;
+}
+.left-section {
+    flex: 1;
+    border-right: 1px solid transparent;
+    border-style: none;
+}
+.right-section {
+    flex: 1;
+    border-left: 1px solid transparent;
+    border-style: none;
+}
+.divider {
+    flex: 0;
+    width: 2px;
+    background-color: solid transparent;
+}
+#vadertitulo {
+    font-family:'Star Wars', sans-serif;
+    text-shadow: 10px 5px 5px rgba(255, 0, 0, 1);
+    text-align: center;
+    transition: text-shadow 0.5s ease;
+}
+
+#vadertitulo:hover {
+    text-shadow: 5px 15px 15px red;
+}
+#caminante {
+    position: absolute;
+}
+
+#losbuenos {
+    font-family: 'Star Wars', sans-serif;
+    text-shadow: 10px 5px 5px rgb(0, 0, 255);
+    text-align: center;
+    transition: text-shadow 0.5s ease;
+    color: white;
+}
+#losbuenos:hover {
+    text-shadow: 5px 15px 15px blue;
+}
+
+.mayus {
+    text-transform: uppercase;
+    font-size: 30px;
+}
